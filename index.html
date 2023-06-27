@@ -29,6 +29,63 @@
                         <li><a class="header-contacts-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                     </ul>
                 </address>
+                <button type="button" class="mob-open js-open-menu">
+                    <svg width="32" height="22">
+                        <use href="./images/icons.svg#icon-icon-menu"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="mobile-container js-menu-container">
+                <button type="button" class="mob-close js-close-menu">
+                    <svg class="btn-close" width="8" height="8">
+                        <use href="./images/icons.svg#icon-x"></use>
+                    </svg>
+                </button>
+                <nav class="mob-navigation list">
+                    <ul class="mob-menu list">
+                        <li class="mob-menu-item list"><a class="mob-menu-link link current" href="./index.html">Studio</a></li>
+                        <li class="mob-menu-item list"><a class="mob-menu-link link" href="./portfolio.html">Portfolio</a></li>
+                        <li class="mob-menu-item list"><a class="mob-menu-link link" href="">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="mob-wraper">
+                <address class="mob-contacts">
+                    <ul class="mob-contacts-item list">
+                        <li><a class="mob-tel-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                        <li><a class="mob-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    </ul>
+                </address>
+                <ul class="mob-soc-list list">
+                    <li class="team-soc-text">
+                        <a href="" class="team-soc-img">
+                            <svg class="team-soc-svg" width="16" height="16">
+                                <use href="./images/icons.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-soc-text">
+                        <a href="" class="team-soc-img">
+                            <svg class="team-soc-svg" width="16" height="16">
+                                <use href="./images/icons.svg#icon-twitter-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-soc-text">
+                        <a href="" class="team-soc-img">
+                            <svg class="team-soc-svg" width="16" height="16">
+                                <use href="./images/icons.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-soc-text">
+                        <a href="" class="team-soc-img">
+                            <svg class="team-soc-svg" width="16" height="16">
+                                <use href="./images/icons.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             </div>
         </header>
 
@@ -82,16 +139,16 @@
                             </ul>
                     </div>
             </section>
-            <section class="service">
+             <section class="service">
                 <div class="container service-container">
                     <h2 class="service-title">What are we doing</h2>
                     <ul class="service-list list">
                         <li class="service-list-info">
-                            <img src="./images/rectangle71.jpg" alt="monitor" width="360"></li>
+                            <img srcset="./images/rectangle71.jpg 1x, ./images/service1@2x.jpg 2x" src="./images/rectangle71.jpg" alt="monitor" width="360"></li>
                         <li class="service-list-info">
-                            <img src="./images/rectangle72.jpg" alt="phone" width="360"></li>
+                            <img srcset="./images/rectangle72.jpg 1x, ./images/service2@2x.jpg 2x" src="./images/rectangle72.jpg" alt="phone" width="360"></li>
                         <li class="service-list-info">
-                            <img src="./images/rectangle73.jpg" alt="laptop" width="360"></li>
+                            <img srcset="./images/rectangle73.jpg 1x, ./images/service3@2x.jpg 2x" src="./images/rectangle73.jpg" alt="laptop" width="360"></li>
                     </ul>
                 </div>
             </section>
@@ -100,7 +157,7 @@
                     <h2 class="team-title">Our Team</h2>
                     <ul class="team-list list">
                         <li class="team-list-member list">
-                            <img class="photo-list" src="./images/img1.jpg" alt="Mark photo" width="264">
+                            <img class="photo-list" srcset="./images/img1.jpg 1x, ./images/mark@2x.jpg 2x" src="./images/img1.jpg" alt="Mark photo" width="264">
                                 <div class="team-info">
                                     <h3 class="team-list-name">Mark Guerrero</h3>
                                     <p class="team-list-job">Product Designer</p>
@@ -137,7 +194,7 @@
                                 </div>
                         </li>
                         <li class="team-list-member list">
-                            <img class="photo-list" src="./images/img2.jpg" alt="Tom photo" width="264">
+                            <img class="photo-list" srcset="./images/img2.jpg 1x, ./images/tom@2x.jpg 2x" src="./images/img2.jpg" alt="Tom photo" width="264">
                                 <div class="team-info">
                                     <h3 class="team-list-name">Tom Ford</h3>
                                     <p class="team-list-job">Frontend Developer</p>
@@ -174,7 +231,7 @@
                                 </div>
                         </li>
                         <li class="team-list-member list">
-                            <img class="photo-list" src="./images/img3.jpg" alt="Camila photo" width="264">
+                            <img class="photo-list" srcset="./images/img3.jpg 1x, ./images/camila@2x.jpg 2x" src="./images/img3.jpg" alt="Camila photo" width="264">
                                 <div class="team-info">
                                     <h3 class="team-list-name">Camila Garcia</h3>
                                     <p class="team-list-job">Marketing</p>
@@ -211,7 +268,7 @@
                                 </div>
                         </li>
                         <li class="team-list-member list">
-                            <img class="photo-list" src="./images/img4.jpg" alt="Daniel photo" width="264">
+                            <img class="photo-list" srcset="./images/img4.jpg 1x, ./images/daniel@2x.jpg 2x" src="./images/img4.jpg" alt="Daniel photo" width="264">
                                 <div class="team-info">
                                     <h3 class="team-list-name">Daniel Wilson</h3>
                                     <p class="team-list-job">UI Designer</p>
@@ -250,7 +307,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="customers">
+             <section class="customers">
                 <div class="container customers-container">
                     <h2 class="customers-info">Customers</h2>
                     <ul class="customers-list list">
@@ -302,7 +359,7 @@
         
         </main>
 
-        <footer class="footer">
+        <!--<footer class="footer">
             <div class="container container-footer">
                 <div class="footer-info">
                     <a href="./index.html" class="footer-logo link">Web<span class="footer-logo-web">Studio</span></a>
@@ -360,7 +417,7 @@
                     </form>
                 </div>
             </div>
-        </footer>
+        </footer>-->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button type="button" class="modal-btn" data-modal-close>
@@ -440,7 +497,14 @@
                     <button type="submit" class="btn-send">Send</button>
                 </form>
             </div>
-        </div>
+        </div> 
         <script src="./js/modal.js"></script>
+        <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+      ></script>
+      <script defer src="./js/menu.js"></script>
     </body>
 </html>
