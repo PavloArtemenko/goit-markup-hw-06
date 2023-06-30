@@ -81,7 +81,7 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* Header */
+/*********************************** Header ********************************/
 .header {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -122,23 +122,78 @@ img {
   margin-left: auto;
 }
 .mobile-container {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 80px 35px 40px 40px;
-  background-color: var(--White-background-color);
-  z-index: 999;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 80px 35px 40px 40px;
+    background-color: var(--White-background-color);
+    z-index: 999;
 
-  transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.mob-contacts-item{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.mob-contacts {
+    margin-bottom: 48px;
+}
+
+.mob-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.mob-menu-link {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11em;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    color: var(--Dark-color);
+}
+
+.current {
+    color: var(--Primary-Brand-color);
+}
+
+.mob-tel-link {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--Primary-Brand-color);
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    font-style: initial;
+
+}
+
+.mob-contacts-link{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--heading-color);
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    font-style: initial;
+}
+
+.mob-soc-list {
+    display: flex;
+    gap: 40px;
 }
 
 .mobile-container.is-open {
-  transform: translateX(0);
+    transform: translateX(0);
 }
 .mob-close {
   position: absolute;
@@ -247,7 +302,7 @@ img {
     color: var(--state-color);
   }
 }
-/* Hero */
+/******************************** Hero *****************************/
 .hero {
   padding: 112px 0;
   background-color: var(--Dark-color);
@@ -429,7 +484,7 @@ img {
     font-weight: 400;
   }
 }
-/* service */
+/*******************************SERVICE*********************/
 .service {
     display: none;
 }
@@ -639,7 +694,10 @@ background-color: var(--Light-color);
     .customers-list {
         flex-wrap: nowrap;
     }
-}/**-------------------BACKDROP--------------*/
+}
+/**********************FOOTER****************/
+
+/**-------------------BACKDROP--------------*/
 
 .backdrop{
     position: fixed;
