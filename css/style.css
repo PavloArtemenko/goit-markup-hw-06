@@ -151,7 +151,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-bottom: 50px;
+
 }
 
 .mob-menu-link {
@@ -169,13 +169,20 @@ img {
 }
 
 .mob-tel-link {
-    font-size: 25px;
+    font-size: 36px;
     font-weight: 700;
     color: var(--Primary-Brand-color);
     line-height: 1.11;
     letter-spacing: 0.02em;
     font-style: initial;
 
+}
+
+@media screen and (max-width: 427px) {
+    .mob-tel-link {
+        font-size: 26px;
+    }
+    
 }
 
 .mob-contacts-link{
@@ -189,7 +196,13 @@ img {
 
 .mob-soc-list {
     display: flex;
-    gap: 40px;
+    gap: 56px;
+}
+
+@media screen and (max-width: 427px) {
+    .mob-soc-list {
+        gap: 26px;
+    }
 }
 
 .mobile-container.is-open {
@@ -696,6 +709,199 @@ background-color: var(--Light-color);
     }
 }
 /**********************FOOTER****************/
+
+.footer{
+    background-color: var(--Dark-color);
+    padding: 97.5px 0 96px;
+    width: 100%;
+}
+
+.container-footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 72px;
+}
+
+.footer-logo{
+    font-family: var(--logo-style);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    display: block;
+    margin-bottom: 17.5px;
+    color: var(--Primary-Brand-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+.footer-logo-web {
+    color: var(--Light-color);
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--Light-color);
+    max-width: 268px;
+    display: flex;
+}
+
+.container-soc {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-soc{
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 16px; 
+
+}
+
+.footer-soc-list{
+    display: flex;
+    gap: 16px;
+}
+
+.footer-soc-item{
+    width: 40px;
+    height: 40px;
+}
+
+.footer-soc-svg{
+    fill: var(--Light-color);
+}
+
+.footer-soc-img{
+    width: 100%;
+    height: 100%;
+    background-color: var(--Primary-Brand-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-sub-text{
+    text-align: center;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+
+.footer-sub {
+    width: 100%;
+}
+
+.footer-sub-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+}
+
+.footer-sub-input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.footer-sub-input::placeholder{
+    color: #ffffff;
+}
+
+.sub-btn{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    display: flex;
+    min-width: 165px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: var(--Primary-Brand-color);
+    border: none;
+    border-radius: 4px;
+
+}
+
+.btn-svg{
+    margin-left: 16px;
+    fill: #FFFFFF;
+}
+
+.footer-sub-label{
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .container-footer {
+        max-width: 584px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+        align-items: flex-start;
+    }
+    .footer-sub-form{
+        flex-direction: row;
+    }
+    .footer-sub {
+        width: unset;
+    }
+    .footer-sub-input {
+        width: 264px;
+    }
+    .footer-sub-text {
+        text-align: left;
+    }
+    .footer-soc{
+        text-align: left;
+    }
+    .footer-logo {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container-footer {
+        max-width: 1158px;
+        flex-wrap: nowrap;
+        gap: unset;
+    }
+    .footer-info {
+        margin-right: 120px;
+    }
+    .container-soc {
+        margin-right: 80px;
+    }
+    .footer {
+        padding: 100px 0;
+    }
+}
 
 /**-------------------BACKDROP--------------*/
 
